@@ -1,0 +1,129 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-background: #FAF8F5;
+  --color-foreground: #2C1A0E;
+  --color-primary: #8B6544;
+  --color-primary-hover: #6E4F35;
+  --color-primary-light: rgba(139, 101, 68, 0.08);
+  --color-secondary: #7A6B5D;
+  --color-accent: #10b981;
+  --color-border: #E6DDD3;
+  --color-border-dark: #3D2B1F;
+  --color-surface: #ffffff;
+  --color-surface-hover: #F5F0EB;
+  --color-dark: #1C1210;
+  --color-dark-card: #2D1F17;
+  --color-muted: #9C8B7A;
+  --color-danger: #ef4444;
+  --color-warning: #D4A056;
+  --color-success: #10b981;
+
+  --font-sans: "DM Sans", system-ui, -apple-system, sans-serif;
+  --font-display: "Instrument Serif", Georgia, serif;
+  --font-mono: "SF Mono", "Fira Code", monospace;
+}
+
+@font-face {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+  src: url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap");
+}
+
+/* Dark mode overrides — activated by .dark class on <html> */
+.dark {
+  --color-background: #1C1210;
+  --color-foreground: #E8DDD3;
+  --color-primary: #C4956A;
+  --color-primary-hover: #A87D55;
+  --color-primary-light: rgba(196, 149, 106, 0.12);
+  --color-secondary: #9C8B7A;
+  --color-accent: #34d399;
+  --color-border: #3D2B1F;
+  --color-border-dark: #5A4030;
+  --color-surface: #2D1F17;
+  --color-surface-hover: #3D2B1F;
+  --color-dark: #1C1210;
+  --color-dark-card: #2D1F17;
+  --color-muted: #7A6B5D;
+  --color-danger: #f87171;
+  --color-warning: #D4A056;
+  --color-success: #34d399;
+}
+
+body {
+  background: var(--color-background);
+  color: var(--color-foreground);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ===== Scroll Animations ===== */
+.scroll-animate {
+  opacity: 0;
+  transform: translateY(32px);
+  transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1),
+              transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.scroll-animate.scroll-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ===== Floating Animation ===== */
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-12px); }
+}
+
+.animate-float {
+  animation: float 5s ease-in-out infinite;
+}
+
+/* ===== Gradient Text Shimmer ===== */
+@keyframes gradient-shift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.animate-gradient-text {
+  background-size: 200% auto;
+  animation: gradient-shift 4s ease-in-out infinite;
+}
+
+/* ===== Ticker / Marquee ===== */
+@keyframes ticker {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-ticker {
+  animation: ticker 25s linear infinite;
+}
+
+.animate-ticker:hover {
+  animation-play-state: paused;
+}
+
+/* ===== Pulse Glow ===== */
+@keyframes pulse-glow {
+  0%, 100% { box-shadow: 0 0 20px rgba(139, 101, 68, 0.15); }
+  50% { box-shadow: 0 0 40px rgba(139, 101, 68, 0.3); }
+}
+
+.animate-pulse-glow {
+  animation: pulse-glow 3s ease-in-out infinite;
+}
+
+/* ===== Stagger children ===== */
+.stagger-children > .scroll-animate:nth-child(1) { transition-delay: 0ms; }
+.stagger-children > .scroll-animate:nth-child(2) { transition-delay: 100ms; }
+.stagger-children > .scroll-animate:nth-child(3) { transition-delay: 200ms; }
+.stagger-children > .scroll-animate:nth-child(4) { transition-delay: 250ms; }
+.stagger-children > .scroll-animate:nth-child(5) { transition-delay: 300ms; }
+.stagger-children > .scroll-animate:nth-child(6) { transition-delay: 350ms; }

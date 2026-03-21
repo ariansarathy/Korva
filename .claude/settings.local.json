@@ -1,0 +1,33 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(node --version)",
+      "Bash(npm --version)",
+      "Bash(npx create-next-app@latest korva-app --typescript --tailwind --eslint --app --src-dir --import-alias \"@/*\" --use-npm)",
+      "Bash(npm install @supabase/supabase-js @supabase/ssr recharts stripe lucide-react)",
+      "Bash(npm run build)",
+      "mcp__Claude_Preview__preview_start",
+      "Bash(npm install @anthropic-ai/sdk)",
+      "Bash(npx tsc --noEmit --pretty src/app/api/ai/query/route.ts)",
+      "Bash(npm install resend)",
+      "Bash(grep -c \"console\\\\.\" /Users/ari/Downloads/Korva-main/src/app/api/**/route.ts)",
+      "Bash(grep -r \"export\" /Users/ari/Downloads/Korva-main/src/lib/connectors/*.ts)",
+      "Bash(npm install --save-dev vitest @vitejs/plugin-react @testing-library/react @testing-library/jest-dom jsdom)",
+      "Bash(npm run test:run)",
+      "Bash(npm install zod)",
+      "Bash(npx vitest run)",
+      "Bash(ls -la /Users/ari/Downloads/Korva-main/src/app/\\\\\\(app\\\\\\)/)",
+      "Bash(ls -la /Users/ari/Downloads/Korva-main/src/app/\\\\\\(app\\\\\\)/analytics/)",
+      "Bash(grep -l \"Suspense\" /Users/ari/Downloads/Korva-main/src/**/*.tsx)",
+      "Bash(npx vitest:*)",
+      "Bash(ls /Users/ari/Downloads/Korva-main/src/app/\\\\\\(app\\\\\\)/dashboard/ /Users/ari/Downloads/Korva-main/src/app/\\\\\\(app\\\\\\)/analytics/ /Users/ari/Downloads/Korva-main/src/app/\\\\\\(app\\\\\\)/products/ /Users/ari/Downloads/Korva-main/src/app/\\\\\\(app\\\\\\)/customers/ /Users/ari/Downloads/Korva-main/src/app/\\\\\\(app\\\\\\)/reports/ /Users/ari/Downloads/Korva-main/src/app/\\\\\\(app\\\\\\)/settings/)",
+      "Bash(npm install:*)",
+      "WebFetch(domain:www.jenoai.com)",
+      "Bash(npx next:*)",
+      "Bash(git init:*)",
+      "Bash(git branch:*)",
+      "Bash(gh auth:*)",
+      "Bash(git add:*)"
+    ]
+  }
+}

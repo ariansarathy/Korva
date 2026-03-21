@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Korva AI — Store, Analyze & Monetize Data Instantly</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container nav-container">
+      <div class="nav-logo">
+        <img src="assets/logo.svg" alt="Korva AI" class="logo-img" />
+      </div>
+      <ul class="nav-links">
+        <li><a href="#how-it-works">How It Works</a></li>
+        <li><a href="#ai-demo">AI Demo</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a href="#" class="btn-text">Log In</a>
+        <a href="#pricing" class="btn-primary btn-sm">Get Started</a>
+      </div>
+      <button class="mobile-toggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container hero-container">
+      <div class="hero-content">
+        <div class="hero-badge">AI-Powered Data Platform</div>
+        <h1>Store, Analyze &amp; Monetize Data <span class="gradient-text">Instantly</span></h1>
+        <p class="hero-sub">Enable your business to harness data across multiple clouds — without managing infrastructure. Run SQL, Python, and AI applications from a single platform.</p>
+        <div class="hero-cta">
+          <a href="#pricing" class="btn-primary btn-lg">Start Free Trial</a>
+          <a href="#ai-demo" class="btn-outline btn-lg">See Demo</a>
+        </div>
+        <div class="hero-trust">
+          <div class="trust-avatars">
+            <div class="avatar" style="background:#4F46E5;">S</div>
+            <div class="avatar" style="background:#0EA5E9;">A</div>
+            <div class="avatar" style="background:#10B981;">M</div>
+            <div class="avatar" style="background:#F59E0B;">R</div>
+          </div>
+          <span>Trusted by <strong>2,400+</strong> data teams worldwide</span>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-dashboard">
+          <div class="dash-header">
+            <div class="dash-dots"><span></span><span></span><span></span></div>
+            <span class="dash-title">Korva Dashboard</span>
+          </div>
+          <div class="dash-body">
+            <div class="dash-kpi-row">
+              <div class="dash-kpi">
+                <span class="kpi-label">Queries Today</span>
+                <span class="kpi-value">12,847</span>
+                <span class="kpi-change up">+23%</span>
+              </div>
+              <div class="dash-kpi">
+                <span class="kpi-label">Data Processed</span>
+                <span class="kpi-value">4.2 TB</span>
+                <span class="kpi-change up">+18%</span>
+              </div>
+              <div class="dash-kpi">
+                <span class="kpi-label">Avg Response</span>
+                <span class="kpi-value">0.3s</span>
+                <span class="kpi-change down">-40%</span>
+              </div>
+            </div>
+            <div class="dash-chart">
+              <svg viewBox="0 0 400 120" class="chart-svg">
+                <defs>
+                  <linearGradient id="chartGrad" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0%" stop-color="#10B981" stop-opacity="0.3"/>
+                    <stop offset="100%" stop-color="#10B981" stop-opacity="0"/>
+                  </linearGradient>
+                </defs>
+                <path d="M0,90 C30,85 60,70 100,60 C140,50 170,65 200,45 C230,25 260,35 300,20 C340,10 370,15 400,5 L400,120 L0,120 Z" fill="url(#chartGrad)"/>
+                <path d="M0,90 C30,85 60,70 100,60 C140,50 170,65 200,45 C230,25 260,35 300,20 C340,10 370,15 400,5" fill="none" stroke="#10B981" stroke-width="2.5"/>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Logos / Social Proof Bar -->
+  <section class="logos-bar">
+    <div class="container">
+      <p class="logos-label">Works with your existing stack</p>
+      <div class="logos-row">
+        <span class="logo-pill">PostgreSQL</span>
+        <span class="logo-pill">Snowflake</span>
+        <span class="logo-pill">AWS S3</span>
+        <span class="logo-pill">BigQuery</span>
+        <span class="logo-pill">Redshift</span>
+        <span class="logo-pill">Databricks</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works -->
+  <section id="how-it-works" class="how-it-works">
+    <div class="container">
+      <div class="section-header light">
+        <h2>How It Works</h2>
+        <p>Go from zero to insights in under 5 minutes. No infrastructure to manage.</p>
+      </div>
+      <div class="steps-grid">
+        <div class="step-card">
+          <div class="step-number">1</div>
+          <div class="step-icon">
+            <svg width="40" height="40" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13.19 8.688a4.5 4.5 0 0 1 1.242 7.244l-4.5 4.5a4.5 4.5 0 0 1-6.364-6.364l1.757-1.757m9.186-9.186 1.757-1.757a4.5 4.5 0 0 1 6.364 6.364l-4.5 4.5a4.5 4.5 0 0 1-7.244-1.242"/></svg>
+          </div>
+          <h3>Connect Your Data</h3>
+          <p>Link your databases, cloud storage, or SaaS tools in one click with pre-built connectors. OAuth-based — no credentials stored.</p>
+          <div class="step-time">
+            <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+            ~30 seconds
+          </div>
+        </div>
+        <div class="step-connector">
+          <svg width="40" height="2"><line x1="0" y1="1" x2="40" y2="1" stroke="#4B5563" stroke-width="2" stroke-dasharray="6,4"/></svg>
+        </div>
+        <div class="step-card">
+          <div class="step-number">2</div>
+          <div class="step-icon">
+            <svg width="40" height="40" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904 9 18.75l-.813-2.846a4.5 4.5 0 0 0-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 0 0 3.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 0 0 3.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 0 0-3.09 3.09ZM18.259 8.715 18 9.75l-.259-1.035a3.375 3.375 0 0 0-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 0 0 2.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 0 0 2.455 2.456L21.75 6l-1.036.259a3.375 3.375 0 0 0-2.455 2.456Z"/></svg>
+          </div>
+          <h3>AI Analyzes Automatically</h3>
+          <p>Korva ingests, normalizes, and runs AI-powered analysis — anomaly detection, trend identification, and forecasting — without writing a single line of code.</p>
+          <div class="step-time">
+            <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+            ~2 minutes
+          </div>
+        </div>
+        <div class="step-connector">
+          <svg width="40" height="2"><line x1="0" y1="1" x2="40" y2="1" stroke="#4B5563" stroke-width="2" stroke-dasharray="6,4"/></svg>
+        </div>
+        <div class="step-card">
+          <div class="step-number">3</div>
+          <div class="step-icon">
+            <svg width="40" height="40" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 0 1 3 19.875v-6.75ZM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 0 1-1.125-1.125V8.625ZM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 0 1-1.125-1.125V4.125Z"/></svg>
+          </div>
+          <h3>Get Insights & Monetize</h3>
+          <p>Receive actionable reports, ask questions in plain English, and unlock revenue from your data with AI-generated recommendations.</p>
+          <div class="step-time">
+            <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+            ~2 minutes
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- AI Query Demo -->
+  <section id="ai-demo" class="ai-demo">
+    <div class="container">
+      <div class="section-header">
+        <h2>Ask Your Data Anything</h2>
+        <p>Type a question in plain English. Korva translates it to SQL, runs it across your clouds, and returns a visual answer in seconds.</p>
+      </div>
+      <div class="demo-window">
+        <div class="demo-header">
+          <div class="demo-dots"><span></span><span></span><span></span></div>
+          <span class="demo-title">Korva AI Query Engine</span>
+        </div>
+        <div class="demo-content">
+          <!-- Query Input -->
+          <div class="demo-query-bar">
+            <div class="demo-query-icon">
+              <svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="#10B981" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904 9 18.75l-.813-2.846a4.5 4.5 0 0 0-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 0 0 3.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 0 0 3.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 0 0-3.09 3.09Z"/></svg>
+            </div>
+            <span class="demo-query-text" id="query-text"></span>
+            <span class="cursor-blink">|</span>
+          </div>
+
+          <!-- Response Area -->
+          <div class="demo-response" id="demo-response">
+            <div class="demo-response-inner">
+              <!-- AI Text Response -->
+              <div class="ai-response-text" id="ai-response-text">
+                <div class="ai-avatar">AI</div>
+                <div class="ai-message">
+                  <p><strong>Revenue grew 34% month-over-month</strong>, driven primarily by the <em>Enterprise</em> tier which saw a 52% increase. The <em>Growth</em> tier remained stable (+8%), while <em>Starter</em> declined slightly (-3%).</p>
+                  <p class="ai-recommendation">Recommendation: Consider expanding the Enterprise sales team — this segment shows the highest growth velocity and LTV.</p>
+                </div>
+              </div>
+              <!-- Chart -->
+              <div class="demo-chart-container" id="demo-chart">
+                <div class="chart-title">Monthly Revenue by Tier</div>
+                <div class="bar-chart">
+                  <div class="chart-y-axis">
+                    <span>$300K</span><span>$200K</span><span>$100K</span><span>$0</span>
+                  </div>
+                  <div class="chart-bars">
+                    <div class="bar-group">
+                      <div class="bar-stack">
+                        <div class="bar starter" style="height: 25%;" data-value="$42K"></div>
+                        <div class="bar growth" style="height: 30%;" data-value="$68K"></div>
+                        <div class="bar enterprise" style="height: 15%;" data-value="$35K"></div>
+                      </div>
+                      <span class="bar-label">Jan</span>
+                    </div>
+                    <div class="bar-group">
+                      <div class="bar-stack">
+                        <div class="bar starter" style="height: 27%;" data-value="$45K"></div>
+                        <div class="bar growth" style="height: 32%;" data-value="$72K"></div>
+                        <div class="bar enterprise" style="height: 20%;" data-value="$48K"></div>
+                      </div>
+                      <span class="bar-label">Feb</span>
+                    </div>
+                    <div class="bar-group">
+                      <div class="bar-stack">
+                        <div class="bar starter" style="height: 24%;" data-value="$40K"></div>
+                        <div class="bar growth" style="height: 35%;" data-value="$78K"></div>
+                        <div class="bar enterprise" style="height: 28%;" data-value="$65K"></div>
+                      </div>
+                      <span class="bar-label">Mar</span>
+                    </div>
+                    <div class="bar-group">
+                      <div class="bar-stack">
+                        <div class="bar starter" style="height: 26%;" data-value="$44K"></div>
+                        <div class="bar growth" style="height: 33%;" data-value="$74K"></div>
+                        <div class="bar enterprise" style="height: 35%;" data-value="$82K"></div>
+                      </div>
+                      <span class="bar-label">Apr</span>
+                    </div>
+                    <div class="bar-group">
+                      <div class="bar-stack">
+                        <div class="bar starter" style="height: 23%;" data-value="$38K"></div>
+                        <div class="bar growth" style="height: 36%;" data-value="$80K"></div>
+                        <div class="bar enterprise" style="height: 45%;" data-value="$105K"></div>
+                      </div>
+                      <span class="bar-label">May</span>
+                    </div>
+                    <div class="bar-group highlight">
+                      <div class="bar-stack">
+                        <div class="bar starter" style="height: 22%;" data-value="$37K"></div>
+                        <div class="bar growth" style="height: 38%;" data-value="$86K"></div>
+                        <div class="bar enterprise" style="height: 58%;" data-value="$140K"></div>
+                      </div>
+                      <span class="bar-label">Jun</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="chart-legend">
+                  <span class="legend-item"><span class="legend-dot starter"></span>Starter</span>
+                  <span class="legend-item"><span class="legend-dot growth"></span>Growth</span>
+                  <span class="legend-item"><span class="legend-dot enterprise"></span>Enterprise</span>
+                </div>
+              </div>
+              <!-- SQL Preview -->
+              <div class="demo-sql" id="demo-sql">
+                <div class="sql-header">
+                  <span>Generated SQL</span>
+                  <button class="sql-copy">Copy</button>
+                </div>
+                <pre><code>SELECT
+  DATE_TRUNC('month', created_at) AS month,
+  pricing_tier,
+  SUM(revenue) AS total_revenue
+FROM subscriptions
+WHERE created_at >= NOW() - INTERVAL '6 months'
+GROUP BY month, pricing_tier
+ORDER BY month ASC;</code></pre>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Grid -->
+  <section class="features">
+    <div class="container">
+      <div class="section-header">
+        <h2>Built for Modern Data Teams</h2>
+        <p>Everything you need to go from raw data to revenue.</p>
+      </div>
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg width="28" height="28" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 15a4.5 4.5 0 0 0 4.5 4.5H18a3.75 3.75 0 0 0 1.332-7.257 3 3 0 0 0-3.758-3.848 5.25 5.25 0 0 0-10.233 2.33A4.502 4.502 0 0 0 2.25 15Z"/></svg>
+          </div>
+          <h4>Multi-Cloud Native</h4>
+          <p>Query across AWS, GCP, and Azure from one interface. No data movement needed.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg width="28" height="28" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M16.5 10.5V6.75a4.5 4.5 0 1 0-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 0 0 2.25-2.25v-6.75a2.25 2.25 0 0 0-2.25-2.25H6.75a2.25 2.25 0 0 0-2.25 2.25v6.75a2.25 2.25 0 0 0 2.25 2.25Z"/></svg>
+          </div>
+          <h4>Enterprise Security</h4>
+          <p>SOC 2 Type II compliant. AES-256 encryption, row-level security, and full audit trails.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg width="28" height="28" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M17.25 6.75 22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3-4.5 16.5"/></svg>
+          </div>
+          <h4>SQL, Python & AI</h4>
+          <p>Run SQL queries, Python notebooks, and AI models side by side on the same data.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg width="28" height="28" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 3v11.25A2.25 2.25 0 0 0 6 16.5h2.25M3.75 3h-1.5m1.5 0h16.5m0 0h1.5m-1.5 0v11.25A2.25 2.25 0 0 1 18 16.5h-2.25m-7.5 0h7.5m-7.5 0-1 3m8.5-3 1 3m0 0 .5 1.5m-.5-1.5h-9.5m0 0-.5 1.5M9 11.25v1.5M12 9v3.75m3-6v6"/></svg>
+          </div>
+          <h4>Auto Reports</h4>
+          <p>AI-generated weekly reports with plain-English insights delivered to your inbox.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg width="28" height="28" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/></svg>
+          </div>
+          <h4>Real-Time Sync</h4>
+          <p>Webhook-driven ingestion keeps your analytics warehouse updated in near real-time.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg width="28" height="28" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19.128a9.38 9.38 0 0 0 2.625.372 9.337 9.337 0 0 0 4.121-.952 4.125 4.125 0 0 0-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 0 1 8.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0 1 11.964-3.07M12 6.375a3.375 3.375 0 1 1-6.75 0 3.375 3.375 0 0 1 6.75 0Zm8.25 2.25a2.625 2.625 0 1 1-5.25 0 2.625 2.625 0 0 1 5.25 0Z"/></svg>
+          </div>
+          <h4>Team Collaboration</h4>
+          <p>Shared dashboards, role-based access, and Slack/email alerts for your whole team.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing -->
+  <section id="pricing" class="pricing">
+    <div class="container">
+      <div class="section-header">
+        <h2>Simple, Transparent Pricing</h2>
+        <p>Start free. Scale as you grow. No hidden fees.</p>
+      </div>
+      <div class="pricing-grid">
+        <!-- Starter -->
+        <div class="pricing-card">
+          <div class="pricing-tier">Starter</div>
+          <div class="pricing-desc">For individuals and small teams getting started with data analytics.</div>
+          <div class="pricing-amount">
+            <span class="price-currency">$</span>
+            <span class="price-value">49</span>
+            <span class="price-period">/month</span>
+          </div>
+          <a href="#" class="btn-outline btn-block">Start Free Trial</a>
+          <ul class="pricing-features">
+            <li>
+              <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="#10B981" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg>
+              Up to 5 data sources
+            </li>
+            <li>
+              <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="#10B981" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg>
+              100 AI queries / month
+            </li>
+            <li>
+              <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="#10B981" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg>
+              Weekly email reports
+            </li>
+            <li>
+              <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="#10B981" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg>
+              1 team member
+            </li>
+            <li>
+              <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="#10B981" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg>
+              Community support
+            </li>
+          </ul>
+        </div>
+
+        <!-- Growth (Popular) -->
+        <div class="pricing-card popular">
+          <div class="popular-badge">Most Popular</div>
+          <div class="pricing-tier">Growth</div>
+          <div class="pricing-desc">For growing teams that need deeper analytics and more power.</div>
+          <div class="pricing-amount">
+            <span class="price-currency">$</span>
+            <span class="price-value">149</span>
+            <span class="price-period">/month</span>
+          </div>
+          <a href="#" class="btn-primary btn-block">Start Free Trial</a>
+          <ul class="pricing-features">
+            <li>
+              <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="#10B981" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg>
+              Unlimited data sources
+            </li>
+            <li>
+              <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="#10B981" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg>
+              1,000 AI queries / month
+            </li>
+            <li>
+              <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="#10B981" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg>
+              Daily reports + anomaly alerts
+            </li>
+            <li>
+              <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="#10B981" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg>
+              Up to 10 team members
+            </li>
+            <li>
+              <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="#10B981" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg>
+              Python notebook access
+            </li>
+            <li>
+              <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="#10B981" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg>
+              Priority support
+            </li>
+          </ul>
+        </div>
+
+        <!-- Scale -->
+        <div class="pricing-card">
+          <div class="pricing-tier">Scale</div>
+          <div class="pricing-desc">For enterprises that need full power, API access, and compliance.</div>
+          <div class="pricing-amount">
+            <span class="price-currency">$</span>
+            <span class="price-value">299</span>
+            <span class="price-period">/month</span>
+          </div>
+          <a href="#" class="btn-outline btn-block">Start Free Trial</a>
+          <ul class="pricing-features">
+            <li>
+              <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="#10B981" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg>
+              Everything in Growth
+            </li>
+            <li>
+              <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="#10B981" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg>
+              Unlimited AI queries
+            </li>
+            <li>
+              <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="#10B981" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg>
+              Custom report builder
+            </li>
+            <li>
+              <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="#10B981" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg>
+              Unlimited team members
+            </li>
+            <li>
+              <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="#10B981" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg>
+              Full API access
+            </li>
+            <li>
+              <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="#10B981" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg>
+              SOC 2 + SSO + SLA
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta-section">
+    <div class="container">
+      <div class="cta-box">
+        <h2>Ready to Unlock Your Data?</h2>
+        <p>Join 2,400+ teams using Korva to turn raw data into revenue. Start your free 14-day trial — no credit card required.</p>
+        <a href="#pricing" class="btn-primary btn-lg">Get Started Free</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="assets/logo.svg" alt="Korva AI" class="footer-logo" />
+          <p>AI-powered data platform for modern businesses. Store, analyze, and monetize data across any cloud.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Product</h4>
+          <a href="#how-it-works">How It Works</a>
+          <a href="#ai-demo">AI Demo</a>
+          <a href="#pricing">Pricing</a>
+          <a href="#">Documentation</a>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <a href="#">About</a>
+          <a href="#">Blog</a>
+          <a href="#">Careers</a>
+          <a href="#">Contact</a>
+        </div>
+        <div class="footer-col">
+          <h4>Legal</h4>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Security</a>
+          <a href="#">GDPR</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Korva AI. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

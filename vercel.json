@@ -1,0 +1,32 @@
+{
+  "crons": [
+    {
+      "path": "/api/cron/anomalies",
+      "schedule": "0 */6 * * *"
+    },
+    {
+      "path": "/api/cron/reports",
+      "schedule": "0 8 * * 1"
+    },
+    {
+      "path": "/api/cron/weekly-reports",
+      "schedule": "0 9 * * 1"
+    },
+    {
+      "path": "/api/cron/inventory-alerts",
+      "schedule": "0 7 * * *"
+    },
+    {
+      "path": "/api/cron/ad-sync",
+      "schedule": "0 3 * * *"
+    },
+    {
+      "path": "/api/cron/ga4-sync",
+      "schedule": "0 4 * * *"
+    },
+    {
+      "path": "/api/cron/segment-recalculation",
+      "schedule": "0 6 * * *"
+    }
+  ]
+}
